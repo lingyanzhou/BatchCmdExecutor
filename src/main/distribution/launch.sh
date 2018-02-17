@@ -1,0 +1,1 @@
+java -Dspring.config.location=./config -Djava.security.egd=/dev/urandom -jar batch_cmd_executor.jar inPath=in.csv outPath=out.csv
