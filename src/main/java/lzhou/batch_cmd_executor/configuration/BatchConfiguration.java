@@ -125,6 +125,7 @@ public class BatchConfiguration {
         return stepBuilderFactory.get("step1")
                 .partitioner(step1Child)
                 .partitioner("step1Child", new HashPartitioner())
+                .gridSize(gridSize)
                 .taskExecutor(simpleAsyncTaskExecutor)
                 .build();
     }

@@ -15,7 +15,7 @@ public class HashPartitioner implements Partitioner {
         Map<String, ExecutionContext> result
                 = new HashMap<String, ExecutionContext>();
 
-        for (int i = 1; i <= gridSize; i++) {
+        for (int i = 0; i < gridSize; i++) {
             ExecutionContext value = new ExecutionContext();
 
             value.putInt("threadId", i);
